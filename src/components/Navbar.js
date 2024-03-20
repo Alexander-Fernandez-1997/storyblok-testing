@@ -71,7 +71,7 @@ export const Navbar = async () => {
                 <h4 className="text-blue mt-0 mb-0 text-bold">{link.tittle}</h4>
 
                 {link.links.map((subLink) => {
-                  return <a href={subLink.url}>{subLink.text}</a>;
+                  return <a href={subLink.href.url}>{subLink.text}</a>;
                 })}
               </div>
             );
