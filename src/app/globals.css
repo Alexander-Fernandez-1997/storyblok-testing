@@ -102,6 +102,18 @@ a {
   padding-bottom: 2rem;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
 .text-red {
   color: #d3202d;
 }
@@ -213,4 +225,66 @@ footer {
     brightness(103%) contrast(102%);
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg)
     brightness(103%) contrast(102%);
+}
+
+.banner {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://14037714531d9f1823fd-2f413abb8fef6c4ddfe2151e65572e9a.ssl.cf1.rackcdn.com/NRF24__ITPatternBlock_Header.svg");
+}
+
+.banner .layout-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.slogan-container {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid yellow;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.banner-text h2 {
+  font-family: "Unbounded";
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.banner-text h4 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.banner-text p {
+  width: 60%;
+}
+
+.banner-text button {
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.938em 3.125em;
+  display: inline-flex;
+  border-radius: 2.25em;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  border: 2px solid #ffff00;
+  color: #272530;
+  background-color: #ffff00;
+  font-size: 0.95em;
+  text-shadow: 0 0 1px #d3202d;
+  letter-spacing: 0.075em;
+  white-space: nowrap;
+  margin: 2em 0;
 }

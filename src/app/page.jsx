@@ -1,14 +1,14 @@
 import { getStoryblokApi, StoryblokComponent } from "@storyblok/react/rsc";
+import { Banner } from "@/components/Banner";
 
 export default async function Home() {
   const { data } = await fetchData();
 
   return (
     <div>
-      <h1>Story: {data.story.id}</h1>
-      <code>{JSON.stringify(data.story, null, 2)}</code>
-      <hr />
-      <code>{JSON.stringify(data.story.content.body[0], null, 2)}</code>
+      {data?.story?.content?.Banner?.length > 0 && (
+        <Banner data={data.story.content.Banner[0]} />
+      )}
       <StoryblokComponent blok={data.story.content} />
     </div>
   );
