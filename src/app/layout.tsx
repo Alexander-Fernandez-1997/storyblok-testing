@@ -6,6 +6,7 @@ import Grid from "@/components/Grid";
 import Feature from "@/components/Feature";
 import Teaser from "@/components/Teaser";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
       <StoryblokBridgeLoader options={{}} />
     </html>
